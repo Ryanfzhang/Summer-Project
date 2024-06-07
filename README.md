@@ -36,10 +36,25 @@ Not the entire area of 60*96 is a sea area. This tensor indicates which position
 
 ## Results Visualization
 
+You can obtain the longitude and latitude of each position from data/modis_chla_8d_4km_pre.mat
 ```python
-import numpy as np
-with open("./data/dataset.pk", "rb") as f:
-    train_datas, train_labels, train_label_masks, test_datas, test_labels, test_label_masks = pkl.load(f)
+from mpl_toolkits import basemap
+import h5py
+from numpy import meshgrid
+
+tmp =prediction[0,0,0]
+tmp[~is_sea.astype(bool)]=np.nan
+raw_data = h5py.File("./data/modis_chla_8d_4km_pre.mat", 'r')
+lon = np.array(raw_data['longitude']).squeeze()
+lati = np.array(raw_data['latitude']).squeeze()
+
+[x,y] = meshgrid(lon, lati)
+
+lon1, lon2, lati1, lati2 = 111, 117, 20, 24
+map = basemap.Basemap(llcrnrlon=lon1, llcrnrlat=lati1,urcrnrlon=lon2, urcrnrlat=lati2, projection='cyl', resolution='h')
+map.fillcontinents(color='grey')
+map.scatter(x, y, c=tmp, cmap="seismic")
+map.colorbar(ticks=np.linspace(-1.5, 1.5, 20))
 ```
 
 
