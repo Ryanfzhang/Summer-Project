@@ -6,7 +6,7 @@ Chlorophyll-a is an essential indicator of ocean primary productivity<sup>[1]</s
 |  <img src="https://github.com/Ryanfzhang/Summer-Project/assets/150044070/5fa358d3-4c88-4869-b490-2eafbaa2335c" width="300" height="200"/>
 
 
-|![label](https://github.com/Ryanfzhang/Summer-Project/assets/150044070/4831b45e-0a03-4f8d-943d-9fb789725d81)|
+|<img src="https://github.com/Ryanfzhang/Summer-Project/assets/150044070/4831b45e-0a03-4f8d-943d-9fb789725d81" width="300" height="200"/>|
 
 
 [1] Ye H, Tang S, Yang C. Deep learning for Chlorophyll-a concentration retrieval: A case study for the Pearl River estuary[J]. Remote Sensing, 2021, 13(18): 3717.
