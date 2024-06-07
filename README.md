@@ -17,7 +17,7 @@ To read data:
 ```python
 import pickle as pkl
 with open("./data/dataset.pk", "rb") as f:
-  train_datas, train_labels, train_label_masks, test_datas, test_labels, test_label_masks = pkl.load(f)
+      train_datas, train_labels, train_label_masks, test_datas, test_labels, test_label_masks = pkl.load(f)
 ```
 
 Due to the frequent occurrence of missing observations in chlorophyll data, we conducted data imputation in advance to address the missing values. Hence, 
