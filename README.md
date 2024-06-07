@@ -20,8 +20,8 @@ with open("./data/dataset.pk", "rb") as f:
     train_datas, train_labels, train_label_masks, test_datas, test_labels, test_label_masks = pkl.load(f)
 ```
 
-Due to the frequent occurrence of missing observations in chlorophyll data, we conducted data imputation in advance to address the missing values. Hence, we obtained twenty imputed datasets.
+Due to the frequent occurrence of missing observations in chlorophyll data, we conducted data imputation in advance to address the missing values. Hence, we obtained twenty imputed datasets. Specifically,
 
-Specifically, the shape of traing data is $B\times N\times T \times H\times W$, where $B$ represents the num of samples, $N=20$ represents different dataset, $T=12$ represents the timesteps of previous observation, 
+- The shape of **traing data** is $B\times N\times T \times H\times W$, where $B$ represents the num of samples, $N=20$ represents different dataset, $T=12$ represents the timesteps of previous observation, $H=60$ and $W=96$ represents the height and width of this area respectively.
 
 [1] Ye H, Tang S, Yang C. Deep learning for Chlorophyll-a concentration retrieval: A case study for the Pearl River estuary[J]. Remote Sensing, 2021, 13(18): 3717.
