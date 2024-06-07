@@ -22,6 +22,6 @@ with open("./data/dataset.pk", "rb") as f:
 
 Due to the frequent occurrence of missing observations in chlorophyll data, we conducted data imputation in advance to address the missing values. Hence, we obtained twenty imputed datasets.
 
-Specifically, the shape of traing data is $B\times N\times T \times H\times W$
+Specifically, the shape of traing data is $B\times N\times T \times H\times W$, where $B$ represents the num of samples, $N=20$ represents different dataset, $T=12$ represents the timesteps of previous observation, 
 
 [1] Ye H, Tang S, Yang C. Deep learning for Chlorophyll-a concentration retrieval: A case study for the Pearl River estuary[J]. Remote Sensing, 2021, 13(18): 3717.
