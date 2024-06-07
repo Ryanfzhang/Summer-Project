@@ -26,5 +26,12 @@ Due to the frequent occurrence of missing observations in chlorophyll data, we c
 - The shape of **training labels** is $B\times N\times T' \times H\times W$, where $T'=1$ represents the timesteps of prediction.
 - The shape of **training label masks** is one-hot tensor whose shape is the same as **training labels**. Due to the missing observations of chlorophyll data, each value in **training label masks** represents whether the data in the **training labels**  is obtained from real observations (1 represents true).
 
+data/is_sea.npy:
+```python
+import numpy as np
+with open("./data/dataset.pk", "rb") as f:
+    train_datas, train_labels, train_label_masks, test_datas, test_labels, test_label_masks = pkl.load(f)
+```
+
 
 [1] Ye H, Tang S, Yang C. Deep learning for Chlorophyll-a concentration retrieval: A case study for the Pearl River estuary[J]. Remote Sensing, 2021, 13(18): 3717.
