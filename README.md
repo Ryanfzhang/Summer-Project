@@ -24,7 +24,7 @@ Due to the frequent occurrence of missing observations in chlorophyll data, we c
 
 - The shape of **traing data** is $B\times N\times T \times H\times W$, where $B$ represents the num of samples, $N=20$ represents different dataset, $T=12$ represents the timesteps of previous observation, $H=60$ and $W=96$ represents the height and width of this area respectively.
 - The shape of **training labels** is $B\times N\times T' \times H\times W$, where $T'=1$ represents the timesteps of prediction.
-- The shape of **training label masks** is one-hot tensor whose shape is the same as **training labels**. 
+- The shape of **training label masks** is one-hot tensor whose shape is the same as **training labels**. Due to the missing observations of chlorophyll data, each value in **training label masks** represents whether the data in the **training labels**  is obtained from real observations (1 represents true).
 
 
 [1] Ye H, Tang S, Yang C. Deep learning for Chlorophyll-a concentration retrieval: A case study for the Pearl River estuary[J]. Remote Sensing, 2021, 13(18): 3717.
