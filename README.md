@@ -12,7 +12,8 @@ Predict the next moment's chlorophyll concentration using the past twelve time-s
 
 ## Dataset and Illustration
 Dataset is available at https://drive.google.com/file/d/1imsmXtD-oqbAibckTY0J0A6mcgHjUF1-/view?usp=sharing.
-Read data:
+
+To read data:
 ```python
 import pickle as pkl
 with open("./data/dataset.pk", "rb") as f:
