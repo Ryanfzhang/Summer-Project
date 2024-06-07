@@ -3,9 +3,7 @@
 Chlorophyll-a is an essential indicator of ocean primary productivity<sup>[1]</sup>. Future Chlorophyll-a trends is important for analysis of Pearl River Estuary.
 |   Problem Setting   | Previous Observation (1-12th) | Future () | 
 | ----------- | ----------- |----------- |
-|       |  ![Uploading merged.gif…]()
-    |![label](https://github.com/Ryanfzhang/Summer-Project/assets/150044070/4831b45e-0a03-4f8d-943d-9fb789725d81)
-|
+|       |  ![Uploading merged.gif…]()|![label](https://github.com/Ryanfzhang/Summer-Project/assets/150044070/4831b45e-0a03-4f8d-943d-9fb789725d81)|
 
 
 [1] Ye H, Tang S, Yang C. Deep learning for Chlorophyll-a concentration retrieval: A case study for the Pearl River estuary[J]. Remote Sensing, 2021, 13(18): 3717.
