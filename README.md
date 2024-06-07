@@ -32,6 +32,6 @@ import numpy as np
 with open("./data/dataset.pk", "rb") as f:
     train_datas, train_labels, train_label_masks, test_datas, test_labels, test_label_masks = pkl.load(f)
 ```
-
+Not the entire area of 60*96 is a sea area. This tensor indicates which positions are sea areas (1 represents sea).
 
 [1] Ye H, Tang S, Yang C. Deep learning for Chlorophyll-a concentration retrieval: A case study for the Pearl River estuary[J]. Remote Sensing, 2021, 13(18): 3717.
