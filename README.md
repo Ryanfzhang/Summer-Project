@@ -1,6 +1,6 @@
 # Chlorophyll-a Prediction
 ## Background
-Chlorophyll-a is an essential indicator of ocean primary productivity<sup>[1]</sup>. Future Chlorophyll-a trends is important for analysis of Pearl River Estuary.
+Chlorophyll-a is an essential indicator of ocean primary productivity<sup>[1]</sup>. Future Chlorophyll-a  is important for analysis of Pearl River Estuary.
 ## Problem Setting
 Predict the next moment's chlorophyll concentration using the past twelve time-steps.
 |    Previous Observation (1-12th) | Future (13th) | 
