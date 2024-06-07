@@ -5,7 +5,7 @@ Chlorophyll-a is an essential indicator of ocean primary productivity<sup>[1]</s
 Predict the next moment's chlorophyll concentration using the past twelve time-steps.
 |    Previous Observation (1-12th) | Future (13th) | 
 |  ----------- |----------- |
-|  <img src="https://github.com/Ryanfzhang/Summer-Project/assets/150044070/5fa358d3-4c88-4869-b490-2eafbaa2335c" width="300" height="200"/>|<img src="https://github.com/Ryanfzhang/Summer-Project/assets/150044070/4831b45e-0a03-4f8d-943d-9fb789725d81" width="300" height="200"/>|
+|  <img src="https://github.com/Ryanfzhang/Summer-Project/assets/150044070/5fa358d3-4c88-4869-b490-2eafbaa2335c" width="400" height="300"/>|<img src="https://github.com/Ryanfzhang/Summer-Project/assets/150044070/4831b45e-0a03-4f8d-943d-9fb789725d81" width="400" height="300"/>|
 
 
 
