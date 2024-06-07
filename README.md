@@ -20,6 +20,8 @@ with open("./data/dataset.pk", "rb") as f:
     train_datas, train_labels, train_label_masks, test_datas, test_labels, test_label_masks = pkl.load(f)
 ```
 
-Due to the frequent occurrence of missing observations in chlorophyll data, we conducted data imputation in advance to address the missing values. Hence, 
+Due to the frequent occurrence of missing observations in chlorophyll data, we conducted data imputation in advance to address the missing values. Hence, we obtained twenty imputed datasets.
+
+Specifically, 
 
 [1] Ye H, Tang S, Yang C. Deep learning for Chlorophyll-a concentration retrieval: A case study for the Pearl River estuary[J]. Remote Sensing, 2021, 13(18): 3717.
