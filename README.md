@@ -24,7 +24,7 @@ Due to the frequent occurrence of missing observations in chlorophyll data, we c
 
 - The shape of **traing data** is $B\times N\times T \times H\times W$, where $B$ represents the num of samples, $N=20$ represents different dataset, $T=12$ represents the timesteps of previous observation, $H=60$ and $W=96$ represents the height and width of this area respectively.
 - The shape of **training labels** is $B\times N'\times T' \times H\times W$, where $T'=1$ represents the timesteps of target. For different datasets, our target is the true observation without any imputation, so $N'=1$.
-- The shape of **training label masks** is one-hot tensor whose shape is the same as **training labels**. **Training labels** are the true observations, so there are many missing values.. each value in **training label masks** represents whether the data in the **training labels**  is obtained from real observations (1 represents true).
+- The shape of **training label masks** is one-hot tensor whose shape is the same as **training labels**. **Training labels** are the true observations, so there are many missing values. Each value in **training label masks** represents whether the data in the **training labels**  is obtained from real observations (1 represents real observation).
 
 data/is_sea.npy:
 ```python
