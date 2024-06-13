@@ -29,8 +29,7 @@ Due to the frequent occurrence of missing observations in chlorophyll data, we c
 data/is_sea.npy:
 ```python
 import numpy as np
-with open("./data/dataset.pk", "rb") as f:
-    train_datas, train_labels, train_label_masks, test_datas, test_labels, test_label_masks = pkl.load(f)
+is_sea = np.load("./data/is_sea.npy")
 ```
 Not the entire area of 60*96 is a sea area. This tensor indicates which positions are sea areas (1 represents sea).
 
